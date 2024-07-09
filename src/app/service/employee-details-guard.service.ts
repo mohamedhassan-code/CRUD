@@ -1,4 +1,4 @@
-import {CanActivate, Router,ActivatedRouteSnapshot,RouterStateSnapshot} from '@angular/router';
+import { Router, ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { Injectable } from '@angular/core';
 import { EmployeeService } from './employee.service';
 import { map, Observable } from 'rxjs';
