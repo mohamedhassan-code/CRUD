@@ -1,0 +1,11 @@
+<!-- <h1 #h1Validator>
+  (click)="h1Validator.innerHTML=childComponent.getNameandGender()"
+</h1> -->
+<div class="form-group">
+  <input type="text" class="form-control" placeholder="Search By Name" [(ngModel)]="searchTerm" />
+</div>
+<div *ngFor="let employee of filteredEmployee">
+
+<app-display-employee [employee]="employee" [searchTerm]="searchTerm" (notifyDelete)="onDeleteNotification($event)"></app-display-employee>
+</div>
+
